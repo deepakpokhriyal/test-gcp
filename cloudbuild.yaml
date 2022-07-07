@@ -1,0 +1,7 @@
+steps:
+- name: edit
+  id: generate-image-tag
+  entrypoint: bash
+  args:
+  - '-c'
+  - echo $(date) | awk '{print $5}' > index.txt
